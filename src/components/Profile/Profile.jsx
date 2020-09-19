@@ -1,20 +1,15 @@
 import React from "react";
+import MyPosts from "./MyPosts/MyPosts";
+import s from "./Profile.module.css";
 
 const Profile = () => {
   return (
-    <div className="content">
+    <div className={s.content}>
       <div>
         <img src="https://www.lg.com/kz/images/TV/features/D04_TV-UHD-UM71-04-Quad-Core-Processor-Desktop.jpg" />
       </div>
       <div>ava + description</div>
-      <div>
-        My posts
-        <div>New posts</div>
-        <div>
-          <div>post 1</div>
-          <div>post 2</div>
-        </div>
-      </div>
+      <MyPosts />
     </div>
   );
 };
